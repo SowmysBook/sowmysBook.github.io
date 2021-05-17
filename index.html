@@ -26,7 +26,7 @@
   <!-- Favicon -->
   <link rel="icon" type="image/png" href="favicon.png"/>
 
-  <title>Sowmya</title>
+  <title>author_page</title>
   <link rel="manifest" href="manifest.json">
 </head>
 <body>
@@ -36,10 +36,33 @@
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('flutter-first-frame', function () {
-        navigator.serviceWorker.register('flutter_service_worker.js?v=614051854');
+        navigator.serviceWorker.register('flutter_service_worker.js?v=3105495837');
       });
     }
   </script>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+       https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-analytics.js"></script>
+
+  <script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyDSkDxPicQmRyDWE8f2GWmG0CrlTbxbfEA",
+    authDomain: "sowmyabooks-2319a.firebaseapp.com",
+    projectId: "sowmyabooks-2319a",
+    storageBucket: "sowmyabooks-2319a.appspot.com",
+    messagingSenderId: "800591891923",
+    appId: "1:800591891923:web:3be8e4c251fd7ab61bb326",
+    measurementId: "G-JXLJEKEM56"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
   <script src="main.dart.js" type="application/javascript"></script>
 </body>
 </html>
